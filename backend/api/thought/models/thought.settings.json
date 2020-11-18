@@ -28,6 +28,16 @@
     },
     "release_date": {
       "type": "date"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "NOT_ADDRESSED",
+        "IN_PROGRESS",
+        "ADDRESSED",
+        "NO_LONGER_RELEVANT"
+      ],
+      "required": true
     }
   }
 }
