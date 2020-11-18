@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subthemes",
+  "info": {
+    "name": "Subtheme"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "minLength": 1
+    },
+    "theme": {
+      "model": "theme",
+      "via": "subthemes"
+    },
+    "thoughts": {
+      "via": "subtheme",
+      "collection": "thought"
+    }
+  }
+}

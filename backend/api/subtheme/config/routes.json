@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/subthemes",
+      "handler": "subtheme.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/subthemes/count",
+      "handler": "subtheme.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/subthemes/:id",
+      "handler": "subtheme.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/subthemes",
+      "handler": "subtheme.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/subthemes/:id",
+      "handler": "subtheme.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/subthemes/:id",
+      "handler": "subtheme.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

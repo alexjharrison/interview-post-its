@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "studies",
+  "info": {
+    "name": "Study"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date"
+    },
+    "product": {
+      "via": "studies",
+      "model": "product"
+    },
+    "persona": {
+      "via": "studies",
+      "model": "persona"
+    },
+    "study_type": {
+      "via": "studies",
+      "model": "study-type"
+    },
+    "thoughts": {
+      "via": "study",
+      "collection": "thought"
+    }
+  }
+}

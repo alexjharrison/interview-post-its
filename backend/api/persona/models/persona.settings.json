@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "personas",
+  "info": {
+    "name": "Persona"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "role_name": {
+      "type": "string",
+      "required": true
+    },
+    "studies": {
+      "collection": "study",
+      "via": "persona"
+    }
+  }
+}

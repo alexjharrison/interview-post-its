@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "thoughts",
+  "info": {
+    "name": "Thought",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "study": {
+      "model": "study",
+      "via": "thoughts"
+    },
+    "subtheme": {
+      "model": "subtheme",
+      "via": "thoughts"
+    },
+    "feature_number": {
+      "type": "string"
+    },
+    "release_date": {
+      "type": "date"
+    }
+  }
+}

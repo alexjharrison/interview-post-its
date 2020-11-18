@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "study_types",
+  "info": {
+    "name": "Study Type"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "studies": {
+      "collection": "study",
+      "via": "study_type"
+    }
+  }
+}

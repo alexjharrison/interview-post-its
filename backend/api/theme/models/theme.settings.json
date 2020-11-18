@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "themes",
+  "info": {
+    "name": "Theme"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "minLength": 1
+    },
+    "subthemes": {
+      "via": "theme",
+      "collection": "subtheme"
+    }
+  }
+}
